@@ -1,27 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <PackageId>Bllueprint.Core.Infrastructure</PackageId>
-    <Version>10.0.4</Version>
-    <Authors>Nubaum</Authors>
-    <Description>A nice nuget package for DDD - Infrastructure layer</Description>
-    <PackageTags>DDD domain-driven-design clean-architecture domain core csharp dotnet bllueprint</PackageTags>
-    <RepositoryUrl>https://github.com/bllueprint/Bllueprint.Core.Infrastructure</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageIcon>icon.png</PackageIcon>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Remove="assets\**" />
-    <EmbeddedResource Remove="assets\**" />
-    <None Remove="assets\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Bllueprint.Core.Domain" />
-    <PackageReference Include="Bllueprint.Core.Application" />
-    <PackageReference Include="MediatR" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" />
-  </ItemGroup>
-  <ItemGroup>
-    <InternalsVisibleTo Include="Bllueprint.Core.Infrastructure.Tests" />
-  </ItemGroup>
+    <PropertyGroup>
+        <PackageId>Bllueprint.Core.Infrastructure</PackageId>
+        <Version>10.0.4</Version>
+        <Authors>Nubaum</Authors>
+        <Description>A nice nuget package for DDD - Infrastructure layer</Description>
+        <PackageTags>DDD domain-driven-design clean-architecture domain core csharp dotnet bllueprint</PackageTags>
+        <RepositoryUrl>https://github.com/bllueprint/Bllueprint.Core.Infrastructure</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <PackageIcon>icon.png</PackageIcon>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="assets/icon.png"
+              Pack="true"
+              PackagePath="/" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Bllueprint.Core.Domain" />
+        <PackageReference Include="Bllueprint.Core.Application" />
+        <PackageReference Include="MediatR" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    </ItemGroup>
+    <ItemGroup>
+        <InternalsVisibleTo Include="Bllueprint.Core.Infrastructure.Tests" />
+    </ItemGroup>
 </Project>

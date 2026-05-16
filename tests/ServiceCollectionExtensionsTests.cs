@@ -1,3 +1,4 @@
+using Bllueprint.Core.Application;
 using Bllueprint.Core.Infrastructure.Tests.Shared;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;

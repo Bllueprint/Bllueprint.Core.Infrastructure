@@ -12,18 +12,21 @@ public abstract class Repository<TEntity>(DbSet<TEntity> dbSet) : IRepository<TE
     public async Task<TEntity?> GetByIdAsync(Guid id)
         => await DbSet.FindAsync(id);
 
-    public async Task AddAsync(TEntity entity)
-        => await DbSet.AddAsync(entity);
-
-    public Task UpdateAsync(TEntity entity)
+    public async Task<TEntity> AddAsync(TEntity entity)
     {
-        DbSet.Update(entity);
-        return Task.CompletedTask;
+        await DbSet.AddAsync(entity);
+        return entity;
     }
 
-    public Task DeleteAsync(TEntity entity)
+    public Task<TEntity> UpdateAsync(TEntity entity)
+    {
+        DbSet.Update(entity);
+        return Task.FromResult(entity);
+    }
+
+    public Task<bool> DeleteAsync(TEntity entity)
     {
         DbSet.Remove(entity);
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
 }

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <PackageId>Bllueprint.Core.Infrastructure</PackageId>
-        <Version>10.0.4</Version>
+        <Version>10.0.6</Version>
         <Authors>Nubaum</Authors>
         <Description>A nice nuget package for DDD - Infrastructure layer</Description>
         <PackageTags>DDD domain-driven-design clean-architecture domain core csharp dotnet bllueprint</PackageTags>
@@ -17,8 +17,8 @@
               PackagePath="/" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Bllueprint.Core.Domain" />
         <PackageReference Include="Bllueprint.Core.Application" />
+        <PackageReference Include="Bllueprint.Core.Domain" />
         <PackageReference Include="MediatR" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" />
     </ItemGroup>

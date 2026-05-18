@@ -12,7 +12,9 @@
         <PackageIcon>icon.png</PackageIcon>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="assets/icon.png" Pack="true" PackagePath="/" />
+        <None Include="assets/icon.png"
+              Pack="true"
+              PackagePath="/" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Bllueprint.Core.Application" />

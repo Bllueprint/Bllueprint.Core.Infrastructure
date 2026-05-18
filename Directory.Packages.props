@@ -4,7 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="Bllueprint.Core.Domain" Version="10.0.4" />
-    <PackageVersion Include="Bllueprint.Core.Application" Version="10.0.4" />
+    <PackageVersion Include="Bllueprint.Core.Application" Version="10.0.6" />
     <PackageVersion Include="FluentAssertions" Version="8.10.0" />
     <PackageVersion Include="MediatR" Version="14.1.0" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.8" />
